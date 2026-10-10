@@ -3,13 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The personal portfolio of a computer science student exploring machine learning and web technologies.">
+  <meta name="description" content="Mohsan's portfolio. A computer science student exploring software development and web technologies.">
+  <meta name="theme-color" content="#0f1117">
+
   <title>Mohsan | Student Developer</title>
 
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
 <body>
+
+  <header class="site-header">
+    <nav class="container navbar" aria-label="Main navigation">
+      <a class="logo" href="#home">mohsan<span>.dev</span></a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">
+          <span class="status-dot"></span>
+          COMPUTER SCIENCE STUDENT
+        </p>
+
+        <h1>
+          Learning today.<br>
+          <span>Building tomorrow.</span>
+        </h1>
+
+        <p class="hero-description">
+          I'm Mohsan, a computer science student exploring software
+          development, web technologies, and the ideas behind the code.
+          I'm building my skills one project at a time.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">
+            Explore my work <span aria-hidden="true">↘</span>
+          </a>
+
+          <a
+            class="button button-secondary"
+            href="https://github.com/YOUR-GITHUB-USERNAME"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <p class="hero-note">
+          A work in progress, just like my skills.
+        </p>
+      </div>
+
+      <div class="hero-card" aria-label="Developer introduction">
+        <div class="card-top">
+          <div class="window-dots" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <span>about-me.js</span>
+        </div>
+
+        <pre><code><span class="code-purple">const</span> developer = {
+  name: <span class="code-green">"Mohsan"</span>,
+  role: <span class="code-green">"CS Student"</span>,
+  interests: [
+    <span class="code-green">"Web Development"</span>,
+    <span class="code-green">"Software Engineering"</span>
+  ],
+  mindset: <span class="code-green">"Always learning"</span>
+};</code></pre>
+
+        <div class="card-bottom">
+          <span class="status-dot"></span>
+          <span>Currently learning and building</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- More portfolio sections will be added here. -->
+  </main>
 
 </body>
 </html>
