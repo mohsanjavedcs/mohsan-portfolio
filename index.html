@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mohsan's portfolio. A computer science student exploring software development and web technologies.">
-  <meta name="theme-color" content="#0f1117">
+  <meta name="theme-color" content="#100607">
+  <meta name="description" content="Mohsan's student developer portfolio. Exploring web development, software engineering, and computer science.">
 
   <title>Mohsan | Student Developer</title>
 
@@ -13,9 +13,12 @@
 </head>
 <body>
 
+  <!-- Navigation -->
   <header class="site-header">
     <nav class="container navbar" aria-label="Main navigation">
-      <a class="logo" href="#home">mohsan<span>.dev</span></a>
+      <a class="logo" href="#home" aria-label="Mohsan home">
+        mohsan<span>.dev</span>
+      </a>
 
       <button
         class="menu-toggle"
@@ -34,13 +37,15 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#journey">Journey</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero container" id="home">
+    <!-- Hero -->
+    <section class="hero section container" id="home">
       <div class="hero-content">
         <p class="eyebrow">
           <span class="status-dot"></span>
@@ -78,7 +83,7 @@
         </p>
       </div>
 
-      <div class="hero-card" aria-label="Developer introduction">
+      <div class="hero-card">
         <div class="card-top">
           <div class="window-dots" aria-hidden="true">
             <span></span><span></span><span></span>
@@ -103,8 +108,277 @@
       </div>
     </section>
 
-    <!-- More portfolio sections will be added here. -->
+    <!-- About -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">A LITTLE ABOUT ME</p>
+          <h2>Getting started, <span>with purpose.</span></h2>
+          <p class="section-description">
+            I'm at the beginning of my development journey, focused on
+            learning the fundamentals and turning knowledge into practical work.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="content-card about-card">
+            <div class="card-icon" aria-hidden="true">&lt;/&gt;</div>
+            <h3>What I'm doing</h3>
+            <p>
+              Studying computer science, strengthening my programming
+              fundamentals, and exploring how websites and software are built.
+            </p>
+          </article>
+
+          <article class="content-card about-card">
+            <div class="card-icon" aria-hidden="true">01</div>
+            <h3>What I value</h3>
+            <p>
+              Understanding how things work, writing clear code, solving
+              problems, and improving through consistent practice.
+            </p>
+          </article>
+
+          <article class="content-card about-card">
+            <div class="card-icon" aria-hidden="true">↗</div>
+            <h3>Where I'm heading</h3>
+            <p>
+              Toward becoming a capable software developer by building real
+              projects and learning the tools used by development teams.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section container" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">MY TOOLKIT</p>
+        <h2>Skills I'm <span>developing.</span></h2>
+        <p class="section-description">
+          A growing toolkit. This list represents technologies I'm learning
+          or exploring, not a claim of professional mastery.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="content-card skill-card">
+          <div class="skill-card-heading">
+            <span class="skill-symbol">&lt;/&gt;</span>
+            <h3>Web Development</h3>
+          </div>
+          <ul class="tag-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>TypeScript</li>
+          </ul>
+        </article>
+
+        <article class="content-card skill-card">
+          <div class="skill-card-heading">
+            <span class="skill-symbol">{ }</span>
+            <h3>Programming</h3>
+          </div>
+          <ul class="tag-list">
+            <li>Python</li>
+            <li>C++</li>
+          </ul>
+        </article>
+
+        <article class="content-card skill-card">
+          <div class="skill-card-heading">
+            <span class="skill-symbol">⌘</span>
+            <h3>Developer Tools</h3>
+          </div>
+          <ul class="tag-list">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>VS Code</li>
+            <li>npm</li>
+          </ul>
+        </article>
+      </div>
+
+      <p class="small-note">
+        Edit these lists to match what you've actually studied and used.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Projects & <span>experiments.</span></h2>
+          <p class="section-description">
+            This collection will grow as I complete projects and turn
+            what I'm learning into working applications.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="content-card project-card project-empty">
+            <div class="project-top">
+              <span class="project-icon" aria-hidden="true">{ }</span>
+              <span class="project-status">In progress</span>
+            </div>
+
+            <h3>First personal project</h3>
+            <p>
+              I'm working toward my first finished personal project.
+              This space will showcase the problem, the solution,
+              and the lessons learned.
+            </p>
+
+            <ul class="tag-list">
+              <li>Coming soon</li>
+            </ul>
+
+            <span class="project-link muted-link">
+              Project details coming soon
+            </span>
+          </article>
+
+          <article class="content-card project-card project-empty">
+            <div class="project-top">
+              <span class="project-icon" aria-hidden="true">&lt;/&gt;</span>
+              <span class="project-status">Planned</span>
+            </div>
+
+            <h3>Web development project</h3>
+            <p>
+              A future project to apply my HTML, CSS, and JavaScript
+              knowledge to a useful, interactive website.
+            </p>
+
+            <ul class="tag-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+
+            <span class="project-link muted-link">
+              Details will be added when built
+            </span>
+          </article>
+        </div>
+
+        <p class="projects-note">
+          Coursework and experiments can be added here too, clearly
+          labelled so visitors know what each project represents.
+        </p>
+      </div>
+    </section>
+
+    <!-- Learning Journey -->
+    <section class="section container" id="journey">
+      <div class="section-heading">
+        <p class="eyebrow">PROGRESS, NOT PERFECTION</p>
+        <h2>My learning <span>journey.</span></h2>
+        <p class="section-description">
+          The areas I'm working on as I develop a stronger foundation
+          in computer science and software development.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="timeline-marker"></span>
+          <div class="timeline-content">
+            <p class="timeline-label">CURRENT FOCUS</p>
+            <h3>Web fundamentals</h3>
+            <p>
+              Improving my understanding of JavaScript, HTML, CSS,
+              responsive design, and how web applications work.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="timeline-marker"></span>
+          <div class="timeline-content">
+            <p class="timeline-label">BUILDING NEXT</p>
+            <h3>Practical projects</h3>
+            <p>
+              Applying concepts through small projects, documenting my
+              code, and learning to debug problems independently.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="timeline-marker"></span>
+          <div class="timeline-content">
+            <p class="timeline-label">LONG-TERM GOAL</p>
+            <h3>Software engineering</h3>
+            <p>
+              Developing stronger programming skills, collaborating
+              with others, and building reliable applications.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <p class="eyebrow">GET IN TOUCH</p>
+          <h2>Let's connect<span>.</span></h2>
+          <p class="section-description">
+            I'm building my skills and expanding my professional network.
+            You can find my code on GitHub or connect with me on LinkedIn.
+          </p>
+
+          <div class="hero-actions contact-actions">
+            <a
+              class="button button-primary"
+              href="mailto:YOUR-EMAIL@example.com"
+            >
+              Email me <span aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="https://github.com/YOUR-GITHUB-USERNAME"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
+
+            <a
+              class="button button-secondary"
+              href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a class="logo" href="#home">mohsan<span>.dev</span></a>
+
+      <p>
+        Built with HTML, CSS, and JavaScript.
+      </p>
+
+      <p class="copyright">
+        &copy; <span id="current-year">2026</span> Mohsan
+      </p>
+    </div>
+  </footer>
 
 </body>
 </html>
