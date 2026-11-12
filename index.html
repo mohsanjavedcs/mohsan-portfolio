@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#100607">
   <meta name="description" content="Mohsan's portfolio. A computer science student interested in machine learning, deep learning, and artificial intelligence.">
-
-  <title>Mohsan | CS Student & ML Enthusiast</title>
-
+  <title>Mohsan | CS Student &amp; ML Enthusiast</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
@@ -21,13 +19,8 @@
         mohsan<span>.dev</span>
       </a>
 
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-label="Open navigation"
-        aria-expanded="false"
-        aria-controls="nav-links"
-      >
+      <button class="menu-toggle" type="button" aria-label="Open navigation"
+        aria-expanded="false" aria-controls="nav-links">
         <span></span>
         <span></span>
         <span></span>
@@ -71,12 +64,9 @@
             Explore my interests <span aria-hidden="true">↘</span>
           </a>
 
-          <a
-            class="button button-secondary"
+          <a class="button button-secondary"
             href="https://github.com/mohsanjavedcs"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+            target="_blank" rel="noopener noreferrer">
             GitHub <span aria-hidden="true">↗</span>
           </a>
         </div>
@@ -227,65 +217,156 @@
     <section class="section section-alt" id="projects">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">MY FUTURE WORK</p>
-          <h2>Projects & <span>experiments.</span></h2>
+          <p class="eyebrow">MY WORK</p>
+          <h2>Projects &amp; <span>experiments.</span></h2>
           <p class="section-description">
-            This section will grow as I study machine learning and
-            deep learning and begin applying what I learn to practical problems.
+            A collection of university work, personal experiments,
+            and projects related to machine learning and deep learning.
           </p>
         </div>
 
-        <div class="projects-grid">
-          <article class="content-card project-card project-empty">
-            <div class="project-top">
-              <span class="project-icon" aria-hidden="true">01</span>
-              <span class="project-status">Not started</span>
-            </div>
+        <!-- University Projects -->
+        <section class="project-category" aria-labelledby="university-projects-title">
+          <div class="category-heading">
+            <h3 id="university-projects-title">University Projects</h3>
+            <span class="category-count">01 project</span>
+          </div>
 
-            <h3>My first ML project</h3>
-            <p>
-              My first machine learning project will be added here
-              once I've studied the fundamentals and completed a
-              working implementation.
-            </p>
+          <div class="project-window-grid">
+            <article class="project-window">
+              <div class="project-window-top">
+                <div class="window-dots" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+                <span>api_performance_profiler.py</span>
+                <span class="project-status">
+                  <span class="status-dot"></span>
+                  Completed
+                </span>
+              </div>
 
-            <ul class="tag-list">
-              <li>Machine Learning</li>
-              <li>Planned</li>
-            </ul>
+              <div class="project-window-body">
+                <p class="project-kicker">STATISTICS &amp; PROBABILITY</p>
 
-            <span class="project-link muted-link">
-              Project details will be added later
-            </span>
-          </article>
+                <h4>API Performance Profiler</h4>
 
-          <article class="content-card project-card project-empty">
-            <div class="project-top">
-              <span class="project-icon" aria-hidden="true">02</span>
-              <span class="project-status">Future goal</span>
-            </div>
+                <p>
+                  A university project that measures and analyzes the
+                  response times of backend API endpoints. It compares
+                  a fast endpoint with an endpoint that introduces random
+                  delays, then uses statistical measures and visualizations
+                  to study their performance.
+                </p>
 
-            <h3>Deep learning exploration</h3>
-            <p>
-              A future experiment to explore neural networks,
-              understand their training process, and document
-              what I learn along the way.
-            </p>
+                <pre class="project-code"><code><span class="code-purple">endpoints</span> = [<span class="code-green">"/fast"</span>, <span class="code-green">"/delayed"</span>]
+<span class="code-purple">requests_per_endpoint</span> = <span class="code-orange">1000</span>
+<span class="code-purple">analysis</span> = [
+    <span class="code-green">"mean and median"</span>,
+    <span class="code-green">"variance and standard deviation"</span>,
+    <span class="code-green">"quartiles and outliers"</span>
+]</code></pre>
 
-            <ul class="tag-list">
-              <li>Deep Learning</li>
-              <li>Neural Networks</li>
-            </ul>
+                <ul class="tag-list">
+                  <li>Python</li>
+                  <li>Flask</li>
+                  <li>Statistics</li>
+                  <li>Matplotlib</li>
+                  <li>Seaborn</li>
+                  <li>CSV</li>
+                </ul>
 
-            <span class="project-link muted-link">
-              To be developed
-            </span>
-          </article>
-        </div>
+                <a class="project-github-link"
+                  href="https://github.com/mohsanjavedcs/api-performance-profiler"
+                  target="_blank" rel="noopener noreferrer">
+                  View on GitHub <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- Side Projects -->
+        <section class="project-category" aria-labelledby="side-projects-title">
+          <div class="category-heading">
+            <h3 id="side-projects-title">Side Projects</h3>
+            <span class="category-count">In progress</span>
+          </div>
+
+          <div class="project-window-grid">
+            <article class="project-window project-placeholder">
+              <div class="project-window-top">
+                <div class="window-dots" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+                <span>side_projects.py</span>
+                <span class="project-status">Coming soon</span>
+              </div>
+
+              <div class="project-window-body">
+                <p class="project-kicker">PERSONAL EXPERIMENTS</p>
+                <h4>More experiments coming soon</h4>
+                <p>
+                  This section is reserved for personal projects and
+                  small experiments developed outside university coursework.
+                </p>
+
+                <pre class="project-code"><code><span class="code-purple">def</span> <span class="code-blue">build_something</span>():
+    <span class="code-purple">return</span> <span class="code-green">"Coming soon..."</span></code></pre>
+
+                <ul class="tag-list">
+                  <li>Personal Learning</li>
+                  <li>Experiments</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ML/DL Projects -->
+        <section class="project-category" aria-labelledby="ml-dl-projects-title">
+          <div class="category-heading">
+            <h3 id="ml-dl-projects-title">ML/DL Projects</h3>
+            <span class="category-count">Future work</span>
+          </div>
+
+          <div class="project-window-grid">
+            <article class="project-window project-placeholder">
+              <div class="project-window-top">
+                <div class="window-dots" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+                <span>ml_dl_projects.py</span>
+                <span class="project-status">Planned</span>
+              </div>
+
+              <div class="project-window-body">
+                <p class="project-kicker">MACHINE LEARNING &amp; DEEP LEARNING</p>
+                <h4>Building towards my first ML/DL project</h4>
+                <p>
+                  This section will feature practical machine learning
+                  and deep learning projects as I build the required
+                  foundations and complete working implementations.
+                </p>
+
+                <pre class="project-code"><code><span class="code-purple">learning_path</span> = [
+    <span class="code-green">"ML fundamentals"</span>,
+    <span class="code-green">"Neural networks"</span>,
+    <span class="code-green">"Practical projects"</span>
+]</code></pre>
+
+                <ul class="tag-list">
+                  <li>Machine Learning</li>
+                  <li>Deep Learning</li>
+                  <li>Planned</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
 
         <p class="projects-note">
-          Completed projects will include a problem description,
-          methodology, technologies used, results, and a GitHub link.
+          Project descriptions reflect the work completed so far.
+          More details and project links will be added as new work is completed.
         </p>
       </div>
     </section>
@@ -356,28 +437,19 @@
           </p>
 
           <div class="hero-actions contact-actions">
-            <a
-              class="button button-primary"
-              href="mailto:mohsanjaved519@gmail.com"
-            >
+            <a class="button button-primary" href="mailto:mohsanjaved519@gmail.com">
               Email me <span aria-hidden="true">↗</span>
             </a>
 
-            <a
-              class="button button-secondary"
+            <a class="button button-secondary"
               href="https://github.com/mohsanjavedcs"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+              target="_blank" rel="noopener noreferrer">
               GitHub <span aria-hidden="true">↗</span>
             </a>
 
-            <a
-              class="button button-secondary"
+            <a class="button button-secondary"
               href="https://www.linkedin.com/in/mohsan-javed-qureshi-7494453ba"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+              target="_blank" rel="noopener noreferrer">
               LinkedIn <span aria-hidden="true">↗</span>
             </a>
           </div>
@@ -391,13 +463,9 @@
   <footer class="site-footer">
     <div class="container footer-content">
       <a class="logo" href="#home">mohsan<span>.dev</span></a>
-
-      <p>
-        Exploring computer science, ML, and DL.
-      </p>
-
+      <p>Exploring computer science, ML, and DL.</p>
       <p class="copyright">
-        &copy; <span id="current-year">2026</span> Mohsan
+        © <span id="current-year">2026</span> Mohsan
       </p>
     </div>
   </footer>
