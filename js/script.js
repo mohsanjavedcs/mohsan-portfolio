@@ -9,7 +9,6 @@ const navigationLinks = document.querySelectorAll(".nav-links a");
 const sections = document.querySelectorAll("main section[id]");
 const currentYear = document.querySelector("#current-year");
 
-
 // ========================================
 // 2. Mobile navigation
 // ========================================
@@ -64,7 +63,6 @@ if (menuToggle && navLinks) {
   });
 }
 
-
 // ========================================
 // 3. Highlight the active navigation link
 // ========================================
@@ -100,7 +98,6 @@ window.addEventListener("scroll", updateActiveLink, {
 
 window.addEventListener("load", updateActiveLink);
 
-
 // ========================================
 // 4. Update the footer year
 // ========================================
@@ -108,7 +105,6 @@ window.addEventListener("load", updateActiveLink);
 if (currentYear) {
   currentYear.textContent = new Date().getFullYear();
 }
-
 
 // ========================================
 // 5. Initial setup
