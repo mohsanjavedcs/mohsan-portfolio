@@ -318,19 +318,21 @@ a:focus-visible {
   font-size: 0.85rem;
 }
 
-/* Code card */
+/* Code cards */
 
-.hero-card {
+.hero-card,
+.project-window {
   min-width: 0;
   overflow: hidden;
   background: var(--surface-color);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  box-shadow: 0 24px 80px rgb(0 0 0 / 30%);
+  box-shadow: 0 24px 80px rgb(0 0 0 / 20%);
 }
 
 .card-top,
-.card-bottom {
+.card-bottom,
+.project-window-top {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -339,7 +341,8 @@ a:focus-visible {
   font-size: 0.8rem;
 }
 
-.card-top {
+.card-top,
+.project-window-top {
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -389,13 +392,20 @@ a:focus-visible {
   color: #ffb4a9;
 }
 
+.code-orange {
+  color: #ffbd59;
+}
+
+.code-blue {
+  color: #9bc8ff;
+}
+
 /* ========================================
    5. Shared content cards
 ======================================== */
 
 .about-grid,
-.skills-grid,
-.projects-grid {
+.skills-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
@@ -413,7 +423,8 @@ a:focus-visible {
     background-color 180ms ease;
 }
 
-.content-card:hover {
+.content-card:hover,
+.project-window:hover {
   border-color: #8b252d;
   transform: translateY(-3px);
 }
@@ -446,12 +457,8 @@ a:focus-visible {
 }
 
 /* ========================================
-   6. Skills
+   6. Interests
 ======================================== */
-
-.skills-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
 
 .skill-card-heading {
   display: flex;
@@ -497,60 +504,129 @@ a:focus-visible {
    7. Projects
 ======================================== */
 
-.projects-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+.project-category {
+  margin-top: 48px;
 }
 
-.project-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.project-category:first-of-type {
+  margin-top: 0;
 }
 
-.project-top {
-  width: 100%;
+.category-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  margin-bottom: 24px;
+  gap: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border-color);
 }
 
-.project-icon {
-  width: 48px;
-  height: 48px;
+.category-heading h3 {
+  font-size: 1.35rem;
+  letter-spacing: -0.3px;
+}
+
+.category-count {
+  color: var(--muted-color);
+  font-size: 0.78rem;
+}
+
+.project-window-grid {
   display: grid;
-  place-items: center;
-  background: #351014;
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  color: var(--accent-hover);
-  font-family: "Courier New", monospace;
-  font-size: 1.1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.project-window {
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.project-window-top {
+  min-width: 0;
+  flex-wrap: wrap;
+}
+
+.project-window-top > span:nth-child(2) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .project-status {
-  padding: 5px 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-left: auto;
+  padding: 4px 9px;
   background: #2a0e12;
   border: 1px solid var(--border-color);
   border-radius: 20px;
   color: #f0a6ac;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
+  white-space: nowrap;
 }
 
-.project-card .tag-list {
-  margin-top: 22px;
+.project-status .status-dot {
+  width: 6px;
+  height: 6px;
 }
 
-.project-link {
-  margin-top: auto;
-  padding-top: 24px;
-  font-size: 0.85rem;
+.project-window-body {
+  padding: 26px;
+}
+
+.project-kicker {
+  margin-bottom: 9px;
+  color: var(--accent-hover) !important;
+  font-size: 0.68rem !important;
   font-weight: 700;
+  letter-spacing: 1.5px;
 }
 
-.muted-link {
-  color: var(--muted-color);
+.project-window-body h4 {
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.project-code {
+  overflow-x: auto;
+  margin-top: 20px;
+  padding: 18px;
+  background: #14080a;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-sm);
+  color: #f5dfe1;
+  font: 0.78rem/1.9 "Courier New", monospace;
+  white-space: pre;
+}
+
+.project-window-body .tag-list {
+  margin-top: 20px;
+}
+
+.project-github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 24px;
+  color: var(--accent-hover);
+  font-size: 0.88rem;
+  font-weight: 700;
+  transition: color 180ms ease;
+}
+
+.project-github-link:hover {
+  color: #ffffff;
+}
+
+.project-placeholder {
+  opacity: 0.88;
+}
+
+.project-placeholder:hover {
+  opacity: 1;
 }
 
 .projects-note {
@@ -772,7 +848,7 @@ a:focus-visible {
     font-size: clamp(1.9rem, 7vw, 2.6rem);
   }
 
-  .projects-grid {
+  .project-window-grid {
     grid-template-columns: 1fr;
   }
 
@@ -821,12 +897,21 @@ a:focus-visible {
   }
 
   .card-top,
-  .card-bottom {
+  .card-bottom,
+  .project-window-top {
     padding-inline: 14px;
   }
 
   .content-card {
     padding: 23px;
+  }
+
+  .project-window-body {
+    padding: 22px;
+  }
+
+  .category-heading h3 {
+    font-size: 1.15rem;
   }
 }
 
